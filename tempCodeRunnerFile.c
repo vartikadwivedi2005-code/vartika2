@@ -1,22 +1,32 @@
 #include<stdio.h>
-#include<string.h>
 int main()
 {
-    char str[]="aaaabbccc";
-    
-    int len=strlen(str);
-    for(int i=0;i<len-1;i++){
-        for(int j=i+1;j<len;j++)
+    int arr[]={4,6,7,2,3,9,1};
+    for(int i=0;i<7;i++)
+    {
+        int temp =0;
+        for(int j=i+1;j<6;j++)
         {
-            if(str[i]>str[j])
+            if(arr[i]>arr[j])
             {
-                char temp=str[i];
-                str[i]=str[j];
-                str[j]=temp;
+                temp = arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
             }
         }
-        
+        printf("%d\n",arr[i]);
     }
-    printf("%s",str);
+    int n;
+    printf("Enter the number to be searched:");
+    scanf("%d",&n);
+    printf("The number is present at index:");
+    for(int i=0;i<7;i++)
+    {
+        if(arr[i]==n)
+        {
+            printf("%d",i);
+        }
+    }
     return 0;
+   
 }

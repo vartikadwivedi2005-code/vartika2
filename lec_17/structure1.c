@@ -12,7 +12,7 @@ int main(){
     struct student s1[3];   //array of structure
     for(int i=0;i<3;i++){
         printf("Enter name:");
-        
+
         scanf("%s",s1[i].name);
         printf("Enter roll:");
         scanf("%d",&s1[i].roll);
@@ -21,7 +21,7 @@ int main(){
         printf("Enter marks:");
         scanf("%f",&s1[i].marks);    //& is used to get the address of variable
 
-    }
+    
     
         printf("\nSTUDENT DETAILS\n");
         printf("Name is %s\n",s1[i].name);
@@ -30,5 +30,7 @@ int main(){
         printf("Marks is %f\n",s1[i].marks);
 
     }
+    return 0;
+}
     
    

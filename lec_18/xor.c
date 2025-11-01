@@ -1,3 +1,4 @@
+// find unique number in an array using xor
 #include<stdio.h>
 int main(){
     int arr[5]={4,5,3,4,5};   
